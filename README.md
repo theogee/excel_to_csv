@@ -2,6 +2,8 @@
 
 Python script made to convert excel into csv.
 
+The current implementation will generate a csv file with headers and delimited by ```;```
+
 Setup Instruction:
 1. Run ```pip install -r requirements.txt``` to install dependencies.
 2. Copy ```conf.tmpl.json``` and create ```conf.json``` in the project root directory. Fill the field according to your environment.
