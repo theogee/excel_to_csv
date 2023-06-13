@@ -1,0 +1,6 @@
+{
+    "input_file_path": "",
+    "output_file_path": "",
+    "chunk_size": 2000,
+    "num_threads": 5
+}
