@@ -24,7 +24,7 @@ class Converter:
                 futures = []
 
                 for i in range(0, num_rows, chunk_size):
-                    chunk = pd.read_excel(xls, sheet_name=0, skiprows=i, nrows=chunk_size, header=0)
+                    chunk = pd.read_excel(xls, sheet_name=self.conf["sheet_number"], skiprows=i, nrows=chunk_size, header=0)
                     future = executor.submit(self.__convert_chunk, chunk, output_queue, i)
                     futures.append(future)
 
