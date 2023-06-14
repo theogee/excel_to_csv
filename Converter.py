@@ -18,7 +18,7 @@ class Converter:
         output_queue = Queue()
 
         with pd.ExcelFile(input_file) as xls:
-            num_rows = pd.read_excel(xls, sheet_name=0, usecols=[0]).shape[0]
+            num_rows = pd.read_excel(xls, sheet_name=self.conf["sheet_number"], usecols=[0]).shape[0]
 
             with ThreadPoolExecutor(max_workers=num_threads) as executor:
                 futures = []
