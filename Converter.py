@@ -21,7 +21,7 @@ class Converter:
         with pd.ExcelFile(input_file) as xls:
             master = None
 
-            if len(self.conf["columns"]) == 0:
+            if len(self.conf["column_idx"]) == 0:
                 master = pd.read_excel(xls, sheet_name=self.conf["sheet_number"])
             else:
                 master = pd.read_excel(xls, sheet_name=self.conf["sheet_number"], usecols=self.conf["column_idx"])
