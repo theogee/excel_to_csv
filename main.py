@@ -6,7 +6,7 @@ import logging
 import sys
 
 conf = {}
-with open(os.path.join(os.getcwd(), "Script/excel_to_csv/conf.json")) as f:
+with open(os.path.join(os.getcwd(), "conf.json")) as f:
     conf = json.load(f)
 
 logging.basicConfig(
@@ -14,7 +14,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S", 
     level=logging.INFO,
     handlers=[
-        logging.FileHandler("Script/excel_to_csv/main.log"),
+        logging.FileHandler("main.log"),
         logging.StreamHandler(sys.stdout)
     ]
 )
