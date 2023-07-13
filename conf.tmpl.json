@@ -1,6 +1,9 @@
 {
-    "input_file_path": "",
-    "output_file_path": "",
+    "input_file_path": "resources/Update 07 07 2023.xlsx",
+    "output_file_path": "resources/Update 07 07 2023.csv",
     "chunk_size": 2000,
-    "num_threads": 5
+    "num_threads": 5,
+    "sheet_number": 0,
+    "column_idx": [0, 1, 2, 3, 4],
+    "delimiter": ","
 }
